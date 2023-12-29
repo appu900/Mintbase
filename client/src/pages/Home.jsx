@@ -10,10 +10,10 @@ const Home = () => {
       <HeroSection />
 
       {/* category section */}
-      <div className="w-full  mt-4   h-[600px] md:px-16 py-5">
+      <div className="w-full  mt-12 sm:mt-28   h-[600px] md:px-16 py-5">
         {/* category slider */}
         <p className="text-left px-5 text-white text-xl md:hidden mb-5 font-semibold">Featured Contract</p>
-        <div className="w-full flex items-center gap-8 overflow-x-scroll scrollbar-hide">
+        <div className="w-full flex items-center gap-1 overflow-x-scroll scrollbar-hide">
 
         
         {[
