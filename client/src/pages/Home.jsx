@@ -32,7 +32,7 @@ const Home = () => {
             "Utility",
           ].map((item) => (
             <div className=" hover:bg-slate-800 z-50 cursor-pointer ml-3 px-4 py-2 rounded">
-              <p className="text-white">{item}</p>
+              <p className="text-[#85E6C5] md:text-white">{item}</p>
             </div>
           ))}
         </div>
@@ -133,6 +133,8 @@ const Home = () => {
 
         </div>
       </div>
+
+      {/* about section 2 */}
     </div>
   );
 };

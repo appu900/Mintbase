@@ -11,7 +11,7 @@ export default function HomeMidsection() {
         utility NFTs in AI, payments, rewards, tickets, art, memberships...
       </p>
 
-      <div className="max-w-2xl  mx-auto mt-6 cursor-pointer md:px-32 px-20  grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-2xl  mx-auto mt-6 cursor-pointer md:px-32 px-24 grid grid-cols-1 md:grid-cols-2">
         {[
           "Creator Suite",
           "Developers",
