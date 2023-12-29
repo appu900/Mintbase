@@ -103,7 +103,31 @@ const Home = () => {
             </div>
 
             {/* Grid #2 */}
-            <div>
+            <div className="md:mt-0 mt-8">
+
+                <form className="md:w-[600px] h-[350px] bg-[#1E2030] rounded px-5">
+
+                    <div className="border-b border-gray-700 py-6">
+                        <h1 className="font-semibold text-left">New Contract</h1>
+                    </div>
+
+                    <div>
+
+                        <div className="flex flex-col  gap-3 mt-6 text-left">
+                            <p className="text-white text-left ">Store name *</p>
+                            <input type="text" placeholder="Enter Store Name" className="w-full h-[40px] bg-[#11121a] rounded px-3 outline-none" />
+                        </div>
+
+                        <div className="flex flex-col  gap-3 mt-6 text-left">
+                            <p className="text-white text-left ">Symbol *</p>
+                            <input type="text" placeholder="Enter symbol" className="w-full h-[40px] bg-[#11121a] rounded px-3 outline-none" />
+                        </div>
+
+                        <button className="px-4 py-2 bg-gray-600 mt-5 rounded"> Deploy Contract </button>
+
+                    </div>
+                    
+                </form>
 
             </div>
 
