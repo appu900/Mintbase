@@ -16,10 +16,10 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="  z-10 bg-[#070C2B]/10 md:border border-gray-800 ">
+    <Disclosure as="nav" className="z-10 bg-[#070C2B]/10 md:border border-gray-800  ">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-8xl px-2 py-3 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-8xl sticky top-0 px-2 py-3 sm:px-6 lg:px-16">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}

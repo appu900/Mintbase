@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeMidsection() {
   return (
-    <div className="max-w-7xl  text-white  mx-auto mt-[100px] md:mt-[100px] px-4">
+    <div className="max-w-7xl   text-white  mx-auto mt-[30px] md:mt-[100px] px-4">
       <h1 className="md:text-6xl  text-3xl font-semibold tracking-wide text-[#E087FF]">
         The Digital Assets Factory
       </h1>
@@ -11,14 +11,15 @@ export default function HomeMidsection() {
         utility NFTs in AI, payments, rewards, tickets, art, memberships...
       </p>
 
-      <div className="max-w-2xl mx-auto mt-6 cursor-pointer md:px-32 px-20  grid grid-cols-1 md:grid-cols-2">
+      <div className="max-w-2xl  mx-auto mt-6 cursor-pointer md:px-32 px-20  grid grid-cols-1 md:grid-cols-2">
         {[
           "Creator Suite",
           "Developers",
           "Mint a Selfie",
           "Market",
           "Wallet",
-          "AI",
+          "AI"
+          
         ].map((item) => (
           <div className="w-[200px] bg-opacity-50 backdrop-blur-lg  bg-black hover:bg-[#070C2B] mt-4 py-5 rounded">
             <p className="text-[#E087FF] text-[18px]">{item}</p>
