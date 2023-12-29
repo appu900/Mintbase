@@ -10,7 +10,7 @@ const Home = () => {
       <HeroSection />
 
       {/* category section */}
-      <div className="w-full  mt-12 sm:mt-28   h-[600px] md:px-16 py-5">
+      <div className="w-full  mt-16 md:mt-5 sm:mt-28   h-[600px] md:px-16 py-5">
         {/* category slider */}
         <p className="text-left px-5 text-white text-xl md:hidden mb-5 font-semibold">Featured Contract</p>
         <div className="w-full flex items-center gap-1 overflow-x-scroll scrollbar-hide">
@@ -42,6 +42,12 @@ const Home = () => {
             }
          
         </div>
+      </div>
+
+      {/* About section #1 */}
+
+      <div>
+        
       </div>
     </div>
   );
