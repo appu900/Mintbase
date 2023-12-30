@@ -3,9 +3,11 @@ import Navbar from "../components/Navbar";
 import HomeMidsection from "../components/Homepagecomponent/HomeMidsection";
 import HeroSection from "../components/Homepagecomponent/HeroSection";
 import HomeSectionCard from "../components/Homepagecomponent/HomeSectionCard";
-import { BsFillLightningChargeFill } from "react-icons/bs"
+import { BsFillLightningChargeFill } from "react-icons/bs";
 import { AiFillSafetyCertificate } from "react-icons/ai";
-import { MdOutlineSettingsAccessibility } from "react-icons/md"
+import { MdOutlineSettingsAccessibility } from "react-icons/md";
+import HomeSectionAboutCard from "../components/Homepagecomponent/HomeSectionAboutCard";
+import DeveloperdocsCard from "../components/Homepagecomponent/DeveloperdocsCard";
 
 const Home = () => {
   return (
@@ -59,82 +61,134 @@ const Home = () => {
         </p>
 
         <div className="grid md:grid-cols-2 grid-cols-1 mt-16 md:px-0 px-5">
-
-         {/* grid #1 */}
-            <div className="space-y-12">
-                <div className="capitalize">
-                      
-                   <div className="flex items-center
-                    gap-3">
-                      <BsFillLightningChargeFill className="text-2xl text-violet-600"/>
-                      <p className="text-xl font-semibold">Create a NFT Collection</p>
-                   </div>
-                     <p className="   text-[16px] text-left max-w-2xl mt-3 px-9 mx-auto text-gray-400">
-                     Easily Mint, Sell, Transfer and Burn NFTs on your contract</p>
-
-                   
-                </div>
-
-                <div className="capitalize ">
-                      
-                   <div className="flex items-center
-                    gap-3">
-                      <MdOutlineSettingsAccessibility className="text-2xl text-violet-600"/>
-                      <p className="text-xl font-semibold">Your Contract your Rules</p>
-                   </div>
-                     <p className="text-[16px] text-left max-w-xl mt-3  mx-auto text-gray-400">
-                     Add minters and custom rules, like NFTs with rarities, to make your contract your own</p>
-
-                   
-                </div>
-
-                <div className="capitalize">
-                      
-                   <div className="flex items-center
-                    gap-3">
-                      <AiFillSafetyCertificate className="text-2xl text-violet-600"/>
-                      <p className="text-xl font-semibold">Safe and Audited</p>
-                   </div>
-                     <p className="text-[16px] text-left max-w-xl mt-3  mx-auto text-gray-400">
-                     Enjoy the safety of your contracts with a stamp of approval from credible auditors</p>
-
-                   
-                </div>
+          {/* grid #1 */}
+          <div className="space-y-12">
+            <div className="capitalize">
+              <div
+                className="flex items-center
+                    gap-3"
+              >
+                <BsFillLightningChargeFill className="text-2xl text-violet-600" />
+                <p className="text-xl font-semibold">Create a NFT Collection</p>
+              </div>
+              <p className="   text-[16px] text-left max-w-2xl mt-3 px-9 mx-auto text-gray-400">
+                Easily Mint, Sell, Transfer and Burn NFTs on your contract
+              </p>
             </div>
 
-            {/* Grid #2 */}
-            <div className="md:mt-0 mt-8">
-
-                <form className="md:w-[600px] h-[350px] bg-[#1E2030] rounded px-5">
-
-                    <div className="border-b border-gray-700 py-6">
-                        <h1 className="font-semibold text-left">New Contract</h1>
-                    </div>
-
-                    <div>
-
-                        <div className="flex flex-col  gap-3 mt-6 text-left">
-                            <p className="text-white text-left ">Store name *</p>
-                            <input type="text" placeholder="Enter Store Name" className="w-full h-[40px] bg-[#11121a] rounded px-3 outline-none" />
-                        </div>
-
-                        <div className="flex flex-col  gap-3 mt-6 text-left">
-                            <p className="text-white text-left ">Symbol *</p>
-                            <input type="text" placeholder="Enter symbol" className="w-full h-[40px] bg-[#11121a] rounded px-3 outline-none" />
-                        </div>
-
-                        <button className="px-4 py-2 bg-gray-600 mt-5 rounded"> Deploy Contract </button>
-
-                    </div>
-                    
-                </form>
-
+            <div className="capitalize ">
+              <div
+                className="flex items-center
+                    gap-3"
+              >
+                <MdOutlineSettingsAccessibility className="text-2xl text-violet-600" />
+                <p className="text-xl font-semibold">
+                  Your Contract your Rules
+                </p>
+              </div>
+              <p className="text-[16px] text-left max-w-xl mt-3  mx-auto text-gray-400">
+                Add minters and custom rules, like NFTs with rarities, to make
+                your contract your own
+              </p>
             </div>
 
+            <div className="capitalize">
+              <div
+                className="flex items-center
+                    gap-3"
+              >
+                <AiFillSafetyCertificate className="text-2xl text-violet-600" />
+                <p className="text-xl font-semibold">Safe and Audited</p>
+              </div>
+              <p className="text-[16px] text-left max-w-xl mt-3  mx-auto text-gray-400">
+                Enjoy the safety of your contracts with a stamp of approval from
+                credible auditors
+              </p>
+            </div>
+          </div>
+
+          {/* Grid #2 */}
+          <div className="md:mt-0 mt-8">
+            <form className="md:w-[600px] h-[350px] bg-[#1E2030] rounded px-5">
+              <div className="border-b border-gray-700 py-6">
+                <h1 className="font-semibold text-left">New Contract</h1>
+              </div>
+
+              <div>
+                <div className="flex flex-col  gap-3 mt-6 text-left">
+                  <p className="text-white text-left ">Store name *</p>
+                  <input
+                    type="text"
+                    placeholder="Enter Store Name"
+                    className="w-full h-[40px] bg-[#11121a] rounded px-3 outline-none"
+                  />
+                </div>
+
+                <div className="flex flex-col  gap-3 mt-6 text-left">
+                  <p className="text-white text-left ">Symbol *</p>
+                  <input
+                    type="text"
+                    placeholder="Enter symbol"
+                    className="w-full h-[40px] bg-[#11121a] rounded px-3 outline-none"
+                  />
+                </div>
+
+                <button className="px-4 py-2 bg-gray-600 mt-5 rounded">
+                  {" "}
+                  Deploy Contract{" "}
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 
       {/* about section 2 */}
+
+      <div className="max-w-7xl h-auto mx-auto text-white flex md:flex-row flex-col md:mt-[200px] mt-10 gap-0">
+        <div className=" md:text-left text-center md:w-[95%]">
+          <p className="font-bold text-violet-600 tracking-wide text-[16px]">
+            CREATORS
+          </p>
+          <p className="text-3xl font-semibold max-w-[400px] ">
+            No code, no limits: NFT projects without the complexity
+          </p>
+          <p className="underline cursor-pointer mt-10 text-[#F28C01]">
+            Creator docs
+          </p>
+        </div>
+
+        <div className="flex overflow-x-scroll md:mt-0 mt-6  scrollbar-hide ">
+          {[1, 1, 1, 1].map((item) => (
+            <HomeSectionAboutCard />
+          ))}
+        </div>
+      </div>
+
+      {/* about section 3 */}
+
+      <div className="max-w-7xl h-[800px] mx-auto text-white flex md:flex-row flex-col md:mt-[200px] mt-10 gap-0">
+        <div className=" md:text-left text-center md:w-[79%]">
+          <p className="font-bold uppercase text-violet-600 tracking-wide text-[16px]">
+            Developers
+          </p>
+          <p className="text-3xl md:ml-0 ml-14 font-semibold max-w-[300px] ">
+            Limitless possibilites for developers with templates & SDKs
+          </p>
+          <button className="mt-8 px-7 py-2 bg-white rounded text-black font-semibold">
+            Learn More
+          </button>
+          <p className="underline cursor-pointer mt-10 text-[#F28C01]">
+            Developers docs
+          </p>
+        </div>
+
+        <div className="flex overflow-x-scroll md:mt-0 mt-6  scrollbar-hide ">
+          {[1, 1, 1, 1].map((item) => (
+            <DeveloperdocsCard />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
