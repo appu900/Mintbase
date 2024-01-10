@@ -46,9 +46,20 @@ const Market = () => {
 
       {/* search bar section */}
 
-      <section className="h-[200px] border w-full md:my-10">
+      <section className="h-[200px] border w-full  relative">
 
-        <div></div>
+        <div className="w-full h-[100px] bg-gradient-to-r from-indigo-300 to-purple-400 relative py-14 md:px-0 px-7">
+
+          <div className="flex items-center gap-2 border md:shadow-lg shadow-sm justify-between px-6 max-w-2xl mx-auto h-[30px] bg-white rounded-lg py-10">
+             <p className="text-xl mt-1">
+             <ion-icon name="search-outline"className="text-xl"></ion-icon>
+             </p>
+             <input
+             placeholder="search here"
+             type="text" className="w-full h-full rounded  py-6 outline-none" />
+          </div>
+
+        </div>
       </section>
 
       {/* optional section */}

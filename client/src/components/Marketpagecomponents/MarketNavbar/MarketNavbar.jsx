@@ -8,14 +8,14 @@ const MarketNavbar = () => {
   const[open,setOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0B1426] text-white shadow-sm z-50">
+    <nav className="bg-white text-black shadow-sm z-50">
       <div className="flex items-center font-medium justify-between px-6">
 
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <p className="md:cursor-pointer h-9 ">Mintbase</p>
           <div
           onClick={()=>setOpen(!open)}
-          className="text-white text-3xl md:hidden">
+          className="text-black text-3xl md:hidden">
           <ion-icon name={`${open ? 'close' : 'menu' }`}></ion-icon>
         </div>
         </div>
@@ -44,7 +44,7 @@ const MarketNavbar = () => {
 
         <ul
           className={`
-          md:hidden bg-white absolute w-full h-full bottom-0 py-24 z-20
+          md:hidden bg-white text-black absolute w-full h-full bottom-0 py-24 z-20
           duration-300 ease-in-out transform transition-all
           ${open ? 'left-0' : "left-[-100%]"}
         `}
