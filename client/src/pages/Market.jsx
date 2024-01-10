@@ -44,8 +44,15 @@ const Market = () => {
     <div className="bg-white h-auto w-full">
       <MarketNavbar />
 
+      {/* search bar section */}
+
+      <section className="h-[200px] border w-full md:my-10">
+
+        <div></div>
+      </section>
+
       {/* optional section */}
-      <section className="flex z-10  md:px-16 px-3 md:my- my-7 items-center gap-6">
+      <section className="flex z-10 text-black md:px-16 px-3 md:my- my-7 items-center gap-6">
         <div>
           <div class="hs-dropdown relative inline-flex">
             <button
@@ -123,7 +130,7 @@ const Market = () => {
 
       {/* product section */}
 
-      <section className="md:px-16 px-7 grid md:grid-cols-4 gap-16 z-10 grid-cols-1">
+      <section className="md:px-16 px-5 grid md:grid-cols-4 gap-16 z-10 grid-cols-1">
         {
 
           cardData?.map((item)=>(

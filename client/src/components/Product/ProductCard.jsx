@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductCard = ({ url, name }) => {
   return (
-    <div className="w-[360px] md:w-[340px] z-10 h-[240px] border cursor-pointer rounded-lg relative">
+    <div className="w-[360px] md:w-[340px] z-10 h-[240px] border cursor-pointer rounded-lg relative shadow-lg">
       <img
         src={url}
         alt=""
