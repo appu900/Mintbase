@@ -2,10 +2,11 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../images/pngegg.png";
+import { useNavigate } from "react-router-dom";
 
 const navigation = [
   { name: "Manage", href: "#", current: false },
-  { name: "Market", href: "#", current: false },
+  { name: "Market", href: "/market", current: false },
   { name: "Explorer", href: "#", current: false },
   { name: "Developers", href: "#", current: false },
 ];
@@ -15,6 +16,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const navigate = useNavigate();
   return (
     <Disclosure as="nav" className="z-10 bg-[#070C2B]/10 md:border border-gray-800  ">
       {({ open }) => (
@@ -42,12 +44,12 @@ export default function Example() {
                     {navigation.map((item) => (
                       <a
                         key={item.name}
-                        href={item.href}
+                        onClick={() => navigate(item.href)}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 text-sm font-medium cursor-pointer"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
